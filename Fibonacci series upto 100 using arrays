@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main()
+{
+	int a[50],i;
+	a[0]=0,a[1]=1;
+	printf("%d\t%d",a[0],a[1]);
+	for(i=2;i<15;i++)
+	{
+		a[i]=a[i-1]+a[i-2];
+		if(a[i]<100)
+		printf("\t%d",a[i]);
+	}
+}
